@@ -1,0 +1,52 @@
+@import "normalize";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Merriweather', serif;
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widgets__item {
+  margin-right: 50px;
+}
+
+.twitter_widget {
+  width: 500px;
+  height: 500px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.twitter_widget__item {
+  display: flex;
+  min-height: 70px;
+  padding: 10px;
+  border-bottom: 1px solid #e1e1e1;
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    align-self: flex-start;
+    margin-right: 10px;
+  }
+}
+
+.twitter_widget__loading {
+  justify-self: center;
+  align-self: center;
+}
